@@ -14,3 +14,17 @@ touch
 git remote set-url origin git@github.com:jimmyhuydev/linux-notes.git
 git push -u origin main
 nano
+
+# Daily workflow
+git switch -c feature-name      # Create branch
+# ... make changes ...
+git add .                       # Stage changes
+git commit -m "Description"     # Commit
+git push                        # Push to GitHub
+# Create PR on GitHub, merge, then:
+git switch master
+git pull
+
+When thing break
+git reset --hard origin/master   #Nuclear options
+
