@@ -13,3 +13,4 @@ touch
 
 git remote set-url origin git@github.com:jimmyhuydev/linux-notes.git
 git push -u origin main
+nano
