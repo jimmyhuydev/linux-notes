@@ -1,0 +1,15 @@
+#!/bin/bash
+greet() {
+   echo "Hello, $1!"
+   }
+
+show_info() {
+   echo "First arg: $1"
+   echo "Second arg: $2"
+   echo "Third args: $3"
+   echo "All args: $@"
+   echo "Number of args: $#"
+}
+
+greet "World"
+show_info one two three
